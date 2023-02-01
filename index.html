@@ -5,17 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Code Quiz</title>
 </head>
 
 <body>
     <header>
-        <h1 class="title"> code quiz</h1>
+        <h1 class="title"> Code Quiz</h1>
     </header>
-    <section class="start"></section>
-    <section class="quiz hide"></section>
-    <section class="end hide"></section>
+    <div class="timer">
+        time: <span id="time">0</span>
+    </div>
+    <section class="start">
+        <h2>SpongeBob and Breaking Bad Quiz</h2>
+        <p>How well do you know the best TV shows to be created?</p>
+        <button class="start-btn">Start Game</button>
+    </section>
+    <section class="quiz hide">
+        <h2 class="question">
+        </h2>
+        <div class="answer-box"></div>
+    </section>
+    <section class="hide" id="end">
+        <h2>Quiz Complete</h2>
+        <p>Your final score is: <span id="final-score"></span></p>
+        <p>Enter initials: <input type="text" id="initials"> 
+        <button id="submit">Submit</button></p>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
+
 
 </html>
